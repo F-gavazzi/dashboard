@@ -16,6 +16,7 @@ body {
   min-height: 100vh;
   font-family: 'Wix Madefor Text', sans-serif;
   font-size: larger;
+  height: 100%;
 }
 ul{
     background-color: var(--colorBlack);

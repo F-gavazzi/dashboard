@@ -13,42 +13,39 @@
 <body>
     <header class="text-light  py-3 backgroundBrown d-flex">
         <div class="container">
-            <h1 >Clientes Petshop AuAu</h1>
+            <h1>Clientes Petshop AuAu</h1>
         </div>
         <img src="img/veterinario.png" class="imgHeader">
     </header>
     <main>
         <div id="form" class="container">
             <h2 class="pt-3">Cadastrar novo pet:</h2>
-            <section  class="d-flex">
-            <div class=" input-group mb-3">
-                  <input type="text" class="form" placeholder="Nome do Pet" id="pet">
-            </div>
-            <div class=" input-group mb-3">
-                <input type="text" class="form" placeholder="Atividade"  id="atv">
-          </div>
-          <div class=" input-group mb-3">
-            <input type="number" class="form" placeholder="Quantas atividades" id="qntAtv">
-      </div>
-      <button type="button"onclick="addPet()" class="">Adicionar</button>
-    </section>
+            <section class="d-flex flex-wrap-reverse">
+                <input type="text" class="form flex-fill" placeholder="Atividade(s)" id="atv">
+                <input type="number" class="form flex-fill" placeholder="Quantas atividades" id="qntAtv">
+                <input type="number" class="form flex-fill" placeholder="Idade do Pet" id="idadePet">
+                <input type="text" class="form flex-fill" placeholder="Nome do Pet" id="pet">
+
+                <button type="button" onclick="addPet()">Adicionar</button>
+            </section>
         </div>
         </div>
         <section>
-        <table>
-            <thead>
-                <tr>
-                    <th>Pet</th>
-                    <th>Atividade</th>
-                    <th>Quantas atividades</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody id="lista">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pet</th>
+                        <th>Atividade(s)</th>
+                        <th>Quantas atividades</th>
+                        <th>Idade do Pet</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="lista">
 
-            </tbody>
-        </table>
-    </section>
+                </tbody>
+            </table>
+        </section>
     </main>
     <footer>
         <div class="container d-flex justify-content-center">

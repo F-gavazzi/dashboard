@@ -7,10 +7,6 @@
     --colorBlue:#9BAFF5;
 
 }
-body {
-	font-family: Arial, sans-serif;
-}
-
 
 #form {
 	margin-bottom: 20px;
@@ -31,7 +27,7 @@ button {
 	background-color: var(--colorGreen200);
 	color: var(--colorBlack);
 	cursor: pointer;
-    height: 45px;
+   margin-bottom: 10px;
     text-align: center;
     border: 1px solid ;
     border-radius: .25rem;
@@ -56,7 +52,7 @@ th, td {
 }
 
 th {
-	width: 50%;
+	width: 10%;
 }
 
 .actions {
