@@ -35,29 +35,30 @@ function renderList() {
         idadePet.innerText = pets[i].idadePet;
         
         const tdActions = document.createElement('td');
-        const edit = document.createElement('span');
+        tdActions.classList.add('actions')
+        const edit = document.createElement('button');
         edit.classList.add('edit');
         edit.innerText = 'Editar';
         edit.onclick = function() {
             editpet(i);
         }
-        const del = document.createElement('span');
+        const del = document.createElement('button');
         del.classList.add('delete');
         del.innerText = 'Excluir';
         del.onclick = function() {
             deletepet(i);
         }
 
-        tdActions.appendChild(edit);
-        tdActions.appendChild(del);
+        tdActions.append(edit);
+        tdActions.append(del);
 
-        tr.appendChild(tdpet);
-        tr.appendChild(tdAtv);
-        tr.appendChild(tdQntAtv);
-        tr.appendChild(idadePet);
-        tr.appendChild(tdActions);
+        tr.append(tdpet);
+        tr.append(tdAtv);
+        tr.append(tdQntAtv);
+        tr.append(idadePet);
+        tr.append(tdActions);
 
-        tbody.appendChild(tr);
+        tbody.append(tr);
     }
 }
 
