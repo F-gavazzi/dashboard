@@ -1,3 +1,12 @@
+:root{
+    --colorGreen100:#42EB66;
+    --colorGreen200:#ACF2BB;
+    --colorBlack:#2c2c2c;
+    --colorWhite200:#E9FFF1;
+    --colorWhite100:#F2DFE5;
+    --colorBlue:#9BAFF5;
+
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,11 +14,20 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: font-family: 'Wix Madefor Text', sans-serif;
+  font-size: larger;
 }
-
-header {
-  color: #fff;
-  padding: 10px;
+ul{
+    background-color: var(--colorBlack);
+   
+}
+li{ 
+    color: var(--colorWhite200);
+}
+header div{
+  color: var(--colorBlack);
+  min-height: 40px;
+ 
 }
 header img {
   display: block;
@@ -17,74 +35,67 @@ header img {
   max-width: 100%;
   height: auto;
 }
-main{display: flex;
-flex-direction: column;
-flex-grow: 1;}
-footer{
-    min-height: 10px;
+main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+footer p{
+    min-height: 40px;
+    color: var(--colorBlack);
 }
-
-nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #333;
-  text-decoration: none;
-  padding: 5px 10px;
-  border: 1px solid #333;
-  border-radius: 5px;
-}
-
-nav ul li a:hover {
-  background-color: #333;
-  color: #fff;
-}
-
 section {
-  margin: 20px;
-}
-
-h2 {
-  color: #333;
+  margin: 40px;
+  padding: 2px 5px;
+  background-color: var(--colorBlack);
+  color: var(--colorWhite100);
+  border-radius: 5px;
+  padding: 50px;
 }
 
 .index {
   height: 20px;
-  background-color: #eee;
+  background-color: var(--colorGreen200);
   border-radius: 10px;
   margin-bottom: 10px;
   position: relative;
+  
 }
 
-.bar {
+.barDog {
   height: 100%;
-  background-color: #333;
-  border-radius: 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+  background-color: var(--colorGreen100);
+  border-radius: 6px;
+  position: absolute
 
-span {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 2px 5px;
-  background-color: #333;
-  color: #fff;
-  border-radius: 5px;
 }
+.barCat {
+    height: 100%;
+    background-color: var(--colorGreen100);
+    border-radius: 10px;
+    position: absolute;
+  }
+  span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--colorBlack);
+   
+  }
 .backgroundBrown {
-  background-color: #333;
+  background-color: var(--colorWhite200);
 }
 .colorWhite {
   color: white;
+}
+.colorGreen{
+   color: var(--colorGreen100);
+   text-decoration: none;
+   font-size: larger;
+}
+.imgHeader{
+    max-height: 100px;
+
 }

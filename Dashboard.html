@@ -10,41 +10,51 @@
 </head>
 
 <body>
-    <header class="text-light  py-3 backgroundBrown">
+    <header class="text-light  py-3 backgroundBrown d-flex ">
+
         <div class="container">
-        <h1 class="mb-0">Petshop Au Au </h1>
-        <img href="cachorro.jpg" class="img-fluid">
-        <!-- Adicionando cabeçalho -->
-        <p class="lead mb-0">Índice de Frequência dos pets</p>
-    </div>
+            <div>
+                <h1 class="mb-0">Petshop Au Au </h1>
+
+                <p class="lead mb-0">Índice de Frequência dos pets</p>
+            </div>
+        </div>
+        <img src="img/veterinario.png" class="imgHeader">
     </header>
-    <nav class="nav nav-tabs justify-content-center">
-        <a class="nav-link active" href="#">Cachorros</a>
-        <a class="nav-link active" href="#">Gatos</a>
-        <!-- Adicionando novos links de navegação -->
-        <a class="nav-link active" href="#">Vendas</a>
-        <a class="nav-link active" href="#">Adoção</a>
-    </nav>
+
+    <ul class=" nav-tabs justify-content-center nav ">
+        <li class="p-2"> <a href="#" class=""><button type="button"
+                    class="btn btn-success px-2 colorWhite">Cachorros</button></a></li>
+        <li class="p-2"> <a href="#" class=""><button type="button"
+                    class="btn btn-success px-2 colorWhite">Gatos</button></a></li>
+        <li class="p-2"> <a href="#" class=""><button type="button"
+                    class="btn btn-success px-2 colorWhite">Vendas</button></a></li>
+        <li class="p-2"> <a href="#" class=""><button type="button"
+                    class="btn btn-success px-2 colorWhite">Adoção</button></a></li>
+    </ul>
+
     <main>
-        <section>
+        <section class="">
             <h2>Cachorros</h2>
             <div>
-            <p>Índice de cachorros:</p>
-        </div>
+                <p>Índice de cachorros:</p>
+            </div>
             <div class="index">
-                <div class="bar" style="width: 80%;"></div>
+                <div class="barDog" style="width: 80%;"></div>
                 <span>80%</span>
             </div>
             <h2>Gatos</h2>
             <p>Índice de gatos:</p>
             <div class="index">
-                <div class="bar" style="width: 60%;"></div>
+                <div class="barCat" style="width: 60%;"></div>
                 <span>60%</span>
             </div>
         </section>
     </main>
-    <footer class="text-light  py-3 backgroundBrown">
-        <p>&copy; 2023 Petshop</p>
+    <footer>
+        <div class="container d-flex justify-content-center">
+            <p>&copy; 2023 Petshop</p>
+        </div>
     </footer>
 </body>
 
