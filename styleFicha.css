@@ -1,0 +1,69 @@
+:root{
+    --colorGreen100:#42EB66;
+    --colorGreen200:#ACF2BB;
+    --colorBlack:#2c2c2c;
+    --colorWhite200:#E9FFF1;
+    --colorWhite100:#F2DFE5;
+    --colorBlue:#9BAFF5;
+
+}
+body {
+	font-family: Arial, sans-serif;
+}
+
+
+#form {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input {
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+button {
+	padding: 5px 10px;
+	background-color: var(--colorGreen200);
+	color: var(--colorBlack);
+	cursor: pointer;
+    height: 45px;
+    text-align: center;
+    border: 1px solid ;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+
+table {
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+thead {
+	background-color: var(--colorBlack);
+	color:var(--colorWhite200);
+}
+
+th, td {
+	padding: 10px;
+	border: 1px solid #ddd;
+	text-align: center;
+}
+
+th {
+	width: 50%;
+}
+
+.actions {
+	display: flex;
+	justify-content: space-around;
+}
+
+.edit, .delete {
+	cursor: pointer;
+}

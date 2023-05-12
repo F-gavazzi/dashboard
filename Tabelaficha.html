@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <title>CRUD em HTML, CSS e JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleFicha.css">
+</head>
+
+<body>
+    <header class="text-light  py-3 backgroundBrown d-flex">
+        <div class="container">
+            <h1 >Clientes Petshop AuAu</h1>
+        </div>
+        <img src="img/veterinario.png" class="imgHeader">
+    </header>
+    <main>
+        <div id="form" class="container">
+            <h2 class="pt-3">Cadastrar novo pet:</h2>
+            <section  class="d-flex">
+            <div class=" input-group mb-3">
+                  <input type="text" class="form" placeholder="Nome do Pet" id="pet">
+            </div>
+            <div class=" input-group mb-3">
+                <input type="text" class="form" placeholder="Atividade"  id="atv">
+          </div>
+          <div class=" input-group mb-3">
+            <input type="number" class="form" placeholder="Quantas atividades" id="qntAtv">
+      </div>
+      <button type="button"onclick="addPet()" class="">Adicionar</button>
+    </section>
+        </div>
+        </div>
+        <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pet</th>
+                    <th>Atividade</th>
+                    <th>Quantas atividades</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="lista">
+
+            </tbody>
+        </table>
+    </section>
+    </main>
+    <footer>
+        <div class="container d-flex justify-content-center">
+            <p>&copy; 2023 Petshop</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
