@@ -49,6 +49,7 @@ th, td {
 	padding: 10px;
 	border: 1px solid #ddd;
 	text-align: center;
+    color:  var(--colorWhite200);
 }
 
 th {

@@ -7,7 +7,7 @@ function addPet() {
     const idadePet = document.getElementById('idadePet').value;
 
     if (pet && atv && qntAtv && idadePet) {
-        pets.push({ pet, atv, qntAtv,idadePet });
+        pets.push({ pet, atv, qntAtv, idadePet});
         renderList();
         clearFields();
     } else {
@@ -54,6 +54,7 @@ function renderList() {
         tr.appendChild(tdpet);
         tr.appendChild(tdAtv);
         tr.appendChild(tdQntAtv);
+        tr.appendChild(idadePet);
         tr.appendChild(tdActions);
 
         tbody.appendChild(tr);
@@ -63,8 +64,8 @@ function renderList() {
 function clearFields() {
     document.getElementById('pet').value = '';
     document.getElementById('atv').value = '';
-    document.getElementById('atv').value = '';
-    document.getElementById('atv').value = '';
+    document.getElementById('qntAtv').value = '';
+    document.getElementById('idadePet').value = '';
 }
 
 function deletepet(index) {
